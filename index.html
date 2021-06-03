@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head starts -->
+  <head>
+    <!-- meta tags for the browrser -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- title, appears in google and in the tab name -->
+    <title>SpaceColony Amusement Park</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="assets/images/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="assets/images/site.webmanifest" /> -->
+    <!-- link to css stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- link to fonts (if we decide to add one)-->
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <!-- body starts -->
+  <body>
+    <!-- DESKTOP navbar starts -->
+    <div id="header-desktop">
+      <!-- logo -->
+      <a href="index.html" class="active"
+        ><img src="assets/images/logo.png" alt="logo space colony"
+      /></a>
+      <!-- navbar links -->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Tickets</a>
+        <a href="buy.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="opening-time">
+        <p>
+          Opening hour: 7.00 hs <br />
+          Closing hour: 19.00 hs
+        </p>
+      </div>
+
+      <!-- buy button -->
+      <!-- should hide when screen is small (mobile) -->
+      <button><a href="buy.html">Book Tickets</a></button>
+    </div>
+    <!-- DESKTOP navbar ends -->
+
+    <!-- MOBILE navbar starts -->
+    <!-- LINK TO HAMBURGUER BUTTON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- NAVBAR MOBILE - HAMBURGUER -->
+    <div class="topnav">
+      <a href="index.html" class="active"
+        ><img
+          src="assets/images/logo.png"
+          alt="logo space colony"
+          style="max-width: 100px"
+      /></a>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Tickets</a>
+        <a href="buy.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- MOBILE navbar ends -->
+    <!-- END OF NAVBARs -->
+
+    <hr />
+
+    <!-- START OF MAIN CONTENT -->
+    <div class="main-content">
+      <!-- main landing image -->
+      <div class="main-image">
+        <h1>The best Space themed amusement park in the planet!</h1>
+        <p>Bringing happiness and joy since 1982!</p>
+        <img
+          src="assets/images/main-image.webp"
+          alt="main landing image roller coaster"
+        />
+      </div>
+      <!-- buy button -->
+      <button><a href="buy.html">Book Tickets</a></button>
+    </div>
+
+    <!-- SLIDERS SECTION STARTS -->
+    <div id="sliders">
+      <!-- here goes the 2 sliders -->
+      <div class="games-slider">
+        <h2>Games</h2>
+        <a href="#prev"><img src="assets/images/l_arrow.png" alt="" class="arrow" /></a>
+        <img src="assets/images/game_1a.jpg" alt="" class="pic" />
+        <img src="assets/images/game_4a.jpg" alt="" class="pic" />
+        <img src="assets/images/game_6a.jpg" alt="" class="pic" />
+        <a href="#next"><img src="assets/images/r_arrow.png" alt="" class="arrow" /></a>
+      </div>
+      <div class="amenities-slider">
+        <h2>Amenities</h2>
+        <a href="#prev"><img src="assets/images/l_arrow.png" alt="" class="arrow" /></a>
+        <img src="assets/images/amenity_6a.jpg" alt="" class="pic" />
+        <img src="assets/images/amenity_5a.jpg" alt="" class="pic" />
+        <img src="assets/images/amenity_3a.jpg" alt="" class="pic" />
+        <a href="#next"><img src="assets/images/r_arrow.png" alt="" class="arrow" /></a>
+      </div>
+
+      <!-- should appear when screen is small (mobile) -->
+      <div class="opening-time-2">
+        <p>
+          Opening hour: 7.00 hs <br />
+          Closing hour: 19.00 hs
+        </p>
+      </div>
+      <!-- another buy button -->
+      <button class="slider-buy-button"><a href="buy.html">Book Tickets</a></button>
+    </div>
+    <!-- SLIDERS SECTION ENDS -->
+
+    <hr />
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div id="footer-container">
+        <div class="planets">
+          <a href="index.html"
+            ><i><img src="assets/images/planet.png" alt="" />Home</i></a
+          >
+          <a href="buy.html"
+            ><i><img src="assets/images/planet_2.png" alt="" />Tickets</i></a
+          >
+          <a href="buy.html"
+            ><i><img src="assets/images/planet_3.png" alt="" />Map</i></a
+          >
+          <a href="contact.html"
+            ><i><img src="assets/images/planet_4.png" alt="" />FAQ</i></a
+          >
+          <a href="contact.html"
+            ><i><img src="assets/images/planet_5.png" alt="" />Contact</i></a
+          >
+        </div>
+        <div id="copyright">
+          <p class="copyright">
+            Copyright &copy; 2021 SpaceColony. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <!-- link to javascript of the webpage -->
+    <script
+      type="text/javascript"
+      async=""
+      src="assets/scripts/script1.js"
+    ></script>
+  </body>
+</html>

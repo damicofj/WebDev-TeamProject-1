@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head starts -->
+  <head>
+    <!-- meta tags for the browrser -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- title, appears in google and in the tab name -->
+    <title>SpaceColony Amusement Park</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="assets/images/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <!-- link to css stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- link to fonts (if we decide to add one)-->
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <!-- body starts -->
+  <body>
+    <!-- DESKTOP navbar starts -->
+    <div id="header-desktop">
+      <!-- logo -->
+      <a href="index.html" class="active"
+        ><img src="assets/images/logo.png" alt="logo space colony"
+      /></a>
+      <!-- navbar links -->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Tickets</a>
+        <a href="buy.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="opening-time">
+        <p>
+          Opening hour: 7.00 hs <br />
+          Closing hour: 19.00 hs
+        </p>
+      </div>
+
+      <!-- buy button -->
+      <!-- should hide when screen is small (mobile) -->
+      <button><a href="buy.html">Book Tickets</a></button>
+    </div>
+    <!-- DESKTOP navbar ends -->
+
+    <!-- MOBILE navbar starts -->
+    <!-- LINK TO HAMBURGUER BUTTON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- NAVBAR MOBILE - HAMBURGUER -->
+    <div class="topnav">
+      <a href="index.html" class="active"
+        ><img
+          src="assets/images/logo.png"
+          alt="logo space colony"
+          style="max-width: 100px"
+      /></a>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Tickets</a>
+        <a href="buy.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- MOBILE navbar ends -->
+    <!-- END OF NAVBARs -->
+
+    <hr />
+
+    <!-- CONTENT OF THE PROPER PAGE STARTS -->
+    <!-- Contact Start -->
+    <div class="form-section">
+      <!-- ***** Section Title Start ***** -->
+      <h1 class="section-title">We would love hearing from you!</h1>
+      <p>Complete the form and we will reach you out in short.</p>
+
+      <!-- contact form input field start -->
+      <div class="formulario">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="planet">Planet</label>
+          <select id="planet" name="planet">
+            <option value="earth">Earth</option>
+            <option value="moon">Moon</option>
+            <option value="mars">Mars</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message.."
+            style="min-height: 150px"
+          ></textarea>
+
+          <!-- submit button -->
+          <!-- this should be connected to a PHP page to work -->
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div id="contact-us2">
+        <p>
+          Or contact us by any of the following means, we will answer your
+          queries in a few hours.
+        </p>
+        <div class="contact-text">
+          <!-- <p>Telefono: + 54 9 341 2586789 -->
+          <p>
+            • WhatsApp: <a href="http://wa.me/x">+ 0 11 222 3333</a> • Email:
+            <a href="mailto:support@spacecolony.com">support@spacecolony.com</a>
+            • Physical Location:
+            <a
+              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28401.11935037899!2d-109.44622398016357!3d-27.15188757185737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9947fa532c310a17%3A0x95aabbca2c061a0c!2sHanga%20Roa%2C%20Easter%20Island%2C%20Valpara%C3%ADso%2C%20Chile!5e0!3m2!1sen!2sar!4v1621610674136!5m2!1sen!2sar"
+              >Crater 52, PC 999, The Moon
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- ***** Section Title End ***** -->
+    </div>
+
+    <hr />
+
+    <!-- Section FAQ -->
+    <!-- this will be a collapse, we still need to learn more css and js for that -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="card">
+        <div class="card-header">
+            Can I buy tickets at the Park entrance?
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            Yes! Tickets are available at the Park entrance, and can be
+            purchased online too.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+            Which shows can I currently watch at the Park?
+        </div>
+        <div id="collapseSix" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            For the safety and wellbeing of our guests, all shows have been
+            temporarily suspended.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+            Are all the restaurants open at the Park?
+        </div>
+        <div id="collapseNine" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            The following restaurants are currently open for dining: Entry Plaza
+            Kiosk | Mask must be worn Mamma Rossella | Mask must be worn
+            Espresso Rosso| Mask must be worn Il Podio | Open | Mask must be
+            worn The following dining outlets remain temporarily closed:
+            Ristorante Cavallino Officer’s Foodquarters Waffles & Crepes Pergola
+            Kiosks
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+            Do I need to wear a face mask on the rides?
+        </div>
+        <div id="collapseEleven" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            For your own safety and wellbeing, you must wear a face mask at all
+            times on all attractions. please note the following: Reusable or
+            disposable (Single use surgical) masks are permitted on all
+            attractions, except those mentioned below Reusable masks with an
+            'ear saver clip' must be worn on - Formula Rossa, Fiorano GT, Flying.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+            Are all the shops open at the Park?
+        </div>
+        <div id="collapseEleven" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            urrently, only the Ferrari store is open. The Past & Present Store
+            remains temporarily closed.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+            What precautionary measures are taken to protect guests from
+            Coronavirus?
+        </div>
+        <div id="collapseEleven" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            The safety and wellbeing of our guests is our top priority! Our
+            preventive measures across the Park include: Extensive Cleaning and
+            Sanitizing Protocol: Increased frequency of sanitizing and
+            disinfection across the entire Park Reduced Capacity: Free
+            of charge hand sanitizers have been placed across the Park for
+            guests to use regularly Face Masks
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT OF THE PROPER PAGE ENDS -->
+    
+    
+    <hr />
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div id="footer-container">
+        <div class="planets">
+          <a href="index.html"
+            ><i><img src="assets/images/planet.png" alt="" />Home</i></a
+          >
+          <a href="buy.html"
+            ><i><img src="assets/images/planet_2.png" alt="" />Tickets</i></a
+          >
+          <a href="buy.html"
+            ><i><img src="assets/images/planet_3.png" alt="" />Map</i></a
+          >
+          <a href="contact.html"
+            ><i><img src="assets/images/planet_4.png" alt="" />FAQ</i></a
+          >
+          <a href="contact.html"
+            ><i><img src="assets/images/planet_5.png" alt="" />Contact</i></a
+          >
+        </div>
+        <div id="copyright">
+          <p class="copyright">
+            Copyright &copy; 2021 SpaceColony. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <!-- link to javascript of the webpage -->
+    <script
+      type="text/javascript"
+      async=""
+      src="assets/scripts/script1.js"
+    ></script>
+  </body>
+</html>

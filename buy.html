@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head starts -->
+  <head>
+    <!-- meta tags for the browrser -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- title, appears in google and in the tab name -->
+    <title>SpaceColony Amusement Park</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="assets/images/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <!-- link to css stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- link to fonts (if we decide to add one)-->
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <!-- body starts -->
+  <body>
+    <!-- DESKTOP navbar starts -->
+    <div id="header-desktop">
+      <!-- logo -->
+      <a href="index.html" class="active"
+        ><img src="assets/images/logo.png" alt="logo space colony"
+      /></a>
+      <!-- navbar links -->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Tickets</a>
+        <a href="buy.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="opening-time">
+        <p>
+          Opening hour: 7.00 hs <br />
+          Closing hour: 19.00 hs
+        </p>
+      </div>
+
+      <!-- buy button -->
+      <!-- should hide when screen is small (mobile) -->
+      <button><a href="buy.html">Book Tickets</a></button>
+    </div>
+    <!-- DESKTOP navbar ends -->
+
+    <!-- MOBILE navbar starts -->
+    <!-- LINK TO HAMBURGUER BUTTON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- NAVBAR MOBILE - HAMBURGUER -->
+    <div class="topnav">
+      <a href="index.html" class="active"
+        ><img
+          src="assets/images/logo.png"
+          alt="logo space colony"
+          style="max-width: 100px"
+      /></a>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Tickets</a>
+        <a href="buy.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- MOBILE navbar ends -->
+    <!-- END OF NAVBARs -->
+
+    <hr />
+
+    <!-- CONTENT OF THE PROPER PAGE STARTS -->
+    <div class="buy-section">
+        <h1>Reserve your tickets now before we are out of stock!</h1>
+        
+        <form action="buy">
+            <h2>Select the quantity</h2>
+            <!-- buy form to choose the quantities needed -->
+            <input type="text" placeholder="Baby +-" style="width: 150px" />
+            <input type="text" placeholder="Junior +-" style="width: 150px" />
+            <input type="text" placeholder="Adult +-" style="width: 150px" />
+            <input type="text" placeholder="Senior +-" style="width: 150px" />
+            
+            <h2>Select the date</h2>
+            <!-- input to choose the wanted date in a calendat -->
+            <input type="date" name="" style="height: 50px; width: 150px; border-radius: 10px; margin-right: 10px;"/>
+            <!-- Send order/Buy button -->
+            <button style="background-color: red; color: white; border-radius: 10px">
+              Buy tickets
+            </button>
+      </form>
+    </div>
+
+    <hr>
+    
+    <div class="map-section">
+      <h2>How can I get there?</h2>
+      <!-- map -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28401.11935037899!2d-109.44622398016357!3d-27.15188757185737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9947fa532c310a17%3A0x95aabbca2c061a0c!2sHanga%20Roa%2C%20Easter%20Island%2C%20Valpara%C3%ADso%2C%20Chile!5e0!3m2!1sen!2sar!4v1621610674136!5m2!1sen!2sar"
+        width="80%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        ></iframe>
+
+      <p>Do you have any doubt about how to get to the park? Please do not hesitate and <a href="contact.html">contact us</a>. We can help you!</p>
+    </div>
+    <!-- CONTENT OF THE PROPER PAGE ENDS -->
+    
+    
+    <hr />
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div id="footer-container">
+        <div class="planets">
+          <a href="index.html"
+          ><i><img src="assets/images/planet.png" alt="" />Home</i></a
+          >
+          <a href="buy.html"
+          ><i><img src="assets/images/planet_2.png" alt="" />Tickets</i></a
+          >
+          <a href="buy.html"
+            ><i><img src="assets/images/planet_3.png" alt="" />Map</i></a
+          >
+          <a href="contact.html"
+            ><i><img src="assets/images/planet_4.png" alt="" />FAQ</i></a
+          >
+          <a href="contact.html"
+            ><i><img src="assets/images/planet_5.png" alt="" />Contact</i></a
+          >
+        </div>
+        <div id="copyright">
+          <p class="copyright">
+            Copyright &copy; 2021 SpaceColony. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <!-- link to javascript of the webpage -->
+    <script
+      type="text/javascript"
+      async=""
+      src="assets/scripts/script1.js"
+    ></script>
+  </body>
+</html>
